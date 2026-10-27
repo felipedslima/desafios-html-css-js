@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    margin: 0
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font: 13px Arial, Helvetica, sans-serif;
+    background: #eef3ec;
+    color: #111
+}
+
+a {
+    color: #1a5f9e;
+    text-decoration: none
+}
+
+
+/* parte de cima */
+.top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    padding: 4px 15px;
+    background: #0c5a66;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.top b {
+    margin-left: 10px
+}
+
+/* abas + empresa/abrir */
+header {
+    position: relative;
+    padding: 8px 15px 0;
+    background: #79c281
+}
+
+.q {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 9px;
+    font-weight: bold
+}
+
+.q select {
+    height: 21px
+}
+
+.q input {
+    width: 230px;
+    height: 26px;
+    padding: 0 12px;
+    border: 1px solid #bbb;
+    border-radius: 13px
+}
+
+.logo {
+    position: absolute;
+    top: 6px;
+    right: 16px;
+    color: #fff;
+    font: 38px "Trebuchet MS", Verdana, sans-serif
+}
+
+.logo small {
+    display: block;
+    font-size: 8px
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 2px;
+    padding: 5px 11px;
+    border-radius: 3px 3px 0 0;
+    background: #0a6a70;
+    color: #fff;
+    font-weight: bold
+}
+
+nav .on {
+    background: #e8eee6;
+    color: #333
+}
+
+aside {
+    flex: none;
+    width: 1000px;
+    overflow: auto;
+    padding: 0 8px
+}
+
+.layout {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    gap: 12px;
+    padding: 12px 8px 8px
+}
+
+/* grafico */
+.grafico {
+    width: 30%;
+    height: 500px;
+    background-color: #6bd578;
+    border-radius: 50%;
+    margin: 170px;
+    position: relative;
+    display: inline-block;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.linha {
+    width: 85%;
+    height: 85%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.linha2 {
+    width: 78%;
+    height: 78%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.linha3 {
+    height: 35%;
+    border: 1px solid #fff;
+    position: relative;
+    bottom: 205px;
+    left: 40px;
+    overflow: hidden;
+}
+
+.linha4 {
+    height: 10%;
+    border: 1px solid #fff;
+    position: relative;
+    top: 178px;
+    left: 10px;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.linha5 {
+    height: 24%;
+    border: 1px solid #fff;
+    position: relative;
+    top: 145px;
+    left: 320px;
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+
+
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+.text2 {
+    font-size: 15px;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    transform: translate(590%, -1000%);
+    font-family: Arial, sans-serif;
+}
+
+.text3 {
+    font-size: 15px;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    transform: translate(590%, -800%);
+    font-family: Arial, sans-serif;
+}
+
+.text4 {
+    font-size: 15px;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    transform: translate(-800%, -1000%);
+    font-family: Arial, sans-serif;
+}
+
+.text5 {
+    font-size: 15px;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    transform: translate(-260%, 800%);
+    font-family: Arial, sans-serif;
+}
+
+.text6 {
+    font-size: 15px;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    transform: translate(0%, 1375%);
+    font-family: Arial, sans-serif;
+}
+
+
+.n::after {
+    text-align: center;
+    margin-left: 400px;
+    content: "↕ ▶ ↻";
+    font-size: 30px;
+    color: #1a5f9e;
+}
+
+
+/* menu lateral*/
+
+fieldset {
+    width: 830px;
+    height: 700px;
+    margin-left: 150px;
+    border-color: #0a6a70;
+}
+
+.s {
+    width: 750px;
+    height: 26px;
+    padding: 0 12px;
+    border: 1px groove #bbb;
+    box-shadow: 0px 8px 6px -10px #000
+}
+
+table th {
+    width: 750px;
+    padding: 0 50px;
+    border-collapse: collapse;
+    background-color: #bbb;
+    font-size: 15px;
+}
+
+table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    padding: 0 0 0 50px;
+    color: #1a5f9e;
+    background-color: rgba(223, 223, 223, 0.826);
+    margin-right: px;
+    font-size: 15px;
+}
+
+table tr {
+    text-align: left;
+    height: 30px;
+}
+
+
+.y::after {
+    content: "✖ 🔍";
+    font-size: 30px;
+}
+
+
+.z::after {
+
+    content: "🛈 ";
+    float: right;
+    clear: right;
+    display: block;
+    width: 40px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 25px;
+    color: #fff;
+    background-color: #0a6a70;
+}
+
+.x::after {
+
+    content: " 🔄 ";
+    float: right;
+    clear: right;
+    display: block;
+    width: 40px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 25px;
+    color: #fff;
+    background-color: #0a6a70;
+}
+
+.c::after {
+
+    content: " ？ ";
+    float: right;
+    clear: right;
+    display: block;
+    width: 40px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 25px;
+    color: #fff;
+    background-color: #0a6a70;
+}
+
+.v::after {
+
+    content: "⬇️";
+    float: right;
+    clear: right;
+    display: block;
+    width: 40px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 25px;
+    color: #fff;
+    background-color: #0a6a70;
+}
+
+.b::after {
+    float: right;
+    content: "🛢 ";
+    float: right;
+    clear: right;
+    display: block;
+    width: 40px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 25px;
+    color: #fff;
+    background-color: #0a6a70;
+}
+
+.m::after {
+    content: "⚙️";
+    float: right;
+    clear: right;
+    display: block;
+    width: 40px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 25px;
+    color: #fff;
+    background-color: #0a6a70;
+}

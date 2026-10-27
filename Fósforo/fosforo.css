@@ -1,0 +1,21 @@
+.alinhar {
+    padding-top: 100px;
+    display: flex;
+    padding-left:790px;
+    gap: 8px;
+}
+
+.alinhar2 {
+    display: flex;
+    padding-left: 690px;
+    gap: 8px;
+}
+
+button {
+    width: 200px;
+    ;
+    font-size: 18px;
+    border-radius: 5%;
+    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.3);
+    border-color: gray;
+}

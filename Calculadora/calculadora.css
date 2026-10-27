@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: rgb(47, 47, 47);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.display {
+    display: flex;
+    align-items: flex-end;
+    background-color: #0c0c0c;
+    height: 80px;
+    color: #fff;
+    font-size: 50px;
+    padding-bottom: 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.display::before {
+    content: '';
+    margin-left: auto;
+}
+
+.display.resultado-ajustado {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: scale;
+}
+
+
+.calculadora {
+    width: 350px;
+    max-width: 100%;
+    background-color: #0c0c0c;
+    padding: 20px;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    height: 70px;
+    font-size: 1.7rem;
+    background: rgb(47, 47, 47);
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.botoes {
+    background: rgb(95, 95, 95);
+}
+
+.botoes1 {
+    background: orange;
+    font-size: 2rem;
+}
+
+/*Historico*/
+.historico {
+    display: flex;
+    align-items: flex-end;
+    height: 20px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #888;
+
+}
+
+.historico::before {
+    content: '';
+    margin-left: auto;
+}
+
+.painel {
+    display: flex;
+    background-color: #0c0c0c;
+    color: orange;
+    font-size: 20px;
+}
+
+.lista-historico {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #888;
+    font-size: 16px;
+}
+
+.lista-historico:empty {
+    display: none;
+}
+
+.lista-historico li {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 3px 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.lista-historico li::-webkit-scrollbar {
+    display: none;
+}
+
+.lista-historico .hist-resultado {
+    color: orange;
+}
+
+.lista-historico li:nth-child(n+3) {
+    opacity: 0.7;
+}
+
+.lista-historico li:nth-child(n+5) {
+    opacity: 0.5;
+}

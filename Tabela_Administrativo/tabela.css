@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  height: 100%;
+  margin: 0
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font: 13px Arial, Helvetica, sans-serif;
+  background: #eef3ec;
+  color: #111
+}
+
+a {
+  color: #1a5f9e;
+  text-decoration: none
+}
+
+
+/* parte de cima */
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  padding: 4px 15px;
+  background: #0c5a66;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.top b {
+  margin-left: 10px
+}
+
+/* abas + empresa/abrir */
+header {
+  position: relative;
+  padding: 8px 15px 0;
+  background: #79c281
+}
+
+.q {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 9px;
+  font-weight: bold
+}
+
+.q select {
+  height: 21px
+}
+
+.q input {
+  width: 230px;
+  height: 26px;
+  padding: 0 12px;
+  border: 1px solid #bbb;
+  border-radius: 13px
+}
+
+.logo {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  color: #fff;
+  font: 38px "Trebuchet MS", Verdana, sans-serif
+}
+
+.logo small {
+  display: block;
+  font-size: 8px
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 2px;
+  padding: 5px 11px;
+  border-radius: 3px 3px 0 0;
+  background: #0a6a70;
+  color: #fff;
+  font-weight: bold
+}
+
+nav .on {
+  background: #e8eee6;
+  color: #333
+}
+
+/* tabela e menu lateral */
+.layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  gap: 12px;
+  padding: 12px 8px 8px
+}
+
+aside {
+  flex: none;
+  width: 330px;
+  overflow: auto;
+  padding: 0 8px
+}
+
+/* tabela geral*/
+table {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: collapse;
+  table-layout: fixed
+}
+
+
+td {
+  height: 29px;
+  padding: 0 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: solid rgba(255, 255, 255, .55);
+  border-width: 0 1px 1px 0
+}
+
+td:nth-child(2) {
+  text-align: right;
+  padding-right: 8px
+}
+
+td:nth-child(n+3):nth-child(-n+5) {
+  text-align: center
+}
+
+tr.c td:last-child {
+  text-align: center
+}
+
+.y::before {
+  content: "✔";
+  color: #2e9e3e;
+  font-weight: bold
+}
+
+.n::before {
+  content: "⊘";
+  color: #e0261c;
+  font-size: 16px;
+  font-weight: bold
+}
+
+td b {
+  display: inline-block;
+  margin-right: 3px;
+  padding: 1px 6px;
+  border: 1px solid #bbb;
+  border-radius: 9px;
+  background: #fff;
+  color: #000;
+  font-size: 11px;
+  line-height: 13px
+}
+
+td b::before {
+  content: "• "
+}
+
+aside div {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccd
+}
+
+aside a {
+  display: block;
+  font-size: 14px;
+  line-height: 18px
+}
+
+fieldset {
+  margin: 12px 0;
+  padding: 2px 10px 6px;
+  border: 3px groove #ddd;
+  border-radius: 4px;
+box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+legend {
+  font-size: 14px
+}
+
+.div1 {
+  flex: none;
+  height: 70vh
+}
+
+aside {
+  flex: none;
+  width: auto;
+  overflow: visible
+}
